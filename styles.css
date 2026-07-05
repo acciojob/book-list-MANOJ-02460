@@ -4,6 +4,11 @@
 	margin-top: 24px'
 }
 
+.delete{
+	background-color:red;
+	color:white;
+}
+
 table, th{
 	padding-right: 80px
 }

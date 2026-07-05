@@ -15,15 +15,14 @@ buttonElement.addEventListener("click",function(e){
 	let newCell1 = document.createElement("td");
 	let newCell2 = document.createElement("td");
 	let newCell3 = document.createElement("td");
-	let deleteBtnEle = document.createElement("button");
+	let deleteBtnEle = document.createElement("td");
 	
 	newCell1.textContent = titleElement.value;
 	newCell2.textContent = authorElement.value;
 	newCell3.textContent = isbnElement.value;
 
 	deleteBtnEle.textContent = "X";
-	deleteBtnEle.style.color = "white";
-	deleteBtnEle.style.background = "red";
+	deleteBtnEle.classList.add("delete")
 	
 
 	row.appendChild(newCell1);
