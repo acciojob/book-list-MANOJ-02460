@@ -15,24 +15,27 @@ buttonElement.addEventListener("click",function(e){
 	let newCell1 = document.createElement("td");
 	let newCell2 = document.createElement("td");
 	let newCell3 = document.createElement("td");
-	let deleteBtnEle = document.createElement("td");
+	let deleteCell = document.createElement("td");
+	let deleteBtn = document.createElement("button");
+	
 	
 	newCell1.textContent = titleElement.value;
 	newCell2.textContent = authorElement.value;
 	newCell3.textContent = isbnElement.value;
 
-	deleteBtnEle.textContent = "X";
-	deleteBtnEle.classList.add("delete")
+	deleteBtn.textContent = "X";
+	deleteBtn.classList.add("delete")
 	
 
 	row.appendChild(newCell1);
 	row.appendChild(newCell2);
 	row.appendChild(newCell3);
-	row.appendChild(deleteBtnEle);
+	row.appendChild(deleteCell);
+	deleteCell.appendChild(deleteBtn)
 	tableElement.appendChild(row);
 
 
-	deleteBtnEle.addEventListener("click",function(){
+	deleteBtn.addEventListener("click",function(){
 		row.remove();
 	})
 
